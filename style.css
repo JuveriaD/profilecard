@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Verdana", Tahoma, sans-serif;
+}
+
+body {
+  background-color: rgb(167, 218, 215);
+  font-family: serif;
+  height: 100vh;
+}
+
+.container {
+  width: 300px;
+  height: 416px;
+  display: block;
+  margin: auto;
+  background: #beaaaa;
+  justify-content: center;
+  position: relative;
+  border-radius: 20px;
+  top: 20%;
+}
+
+.container:hover {
+  transition: 0.2 ease-out;
+  transition: opacity 0.3s ease-out;
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.5);
+}
+
+img {
+  height: 300px;
+}
+.container .profile img {
+  object-fit: contain;
+}
+.container .info {
+  position: relative;
+  bottom: 3px;
+
+  background-color: #000000;
+  height: 60px;
+  width: 300px;
+  color: #cac7c7;
+  text-align: center;
+}
+
+.info:hover {
+  color: black;
+  background-color: white;
+}
+
+.container .links {
+  width: 100%;
+  display: flex;
+  position: relative;
+  bottom: 3px;
+  padding: 4px 0px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  background-color: rgb(133, 148, 147);
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  transition: all 0.3s;
+  font-size: 2em;
+}
+
+.container .links a {
+  margin: 5px;
+  text-decoration: none;
+  padding-left: 25px;
+}
+
+.insta-icon:hover {
+  background: radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
+  -webkit-background-clip: text;
+  /* Also define standard property for compatibility */
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  font-size: 30px; /* change this to change the size*/
+
+  transform: scale(1.6);
+}
+
+.git:hover {
+  color: rgb(0, 0, 0);
+
+  transform: scale(1.6);
+}
+
+.linkedin:hover {
+  color: rgba(4, 0, 253, 0.842);
+  transform: scale(1.6);
+}
+
+.facebook:hover {
+  color: rgb(23, 124, 206);
+  transform: scale(1.6);
+}
